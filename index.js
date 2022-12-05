@@ -6,7 +6,7 @@ const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 // const generateHTML = require("./dist/index.html");
 
-const generateHTML = ({ name, id, email, role, office, school}) => 
+const generateHTML = ({ name, id, email, role, officeNumber, school}) => 
 `
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +49,7 @@ const generateHTML = ({ name, id, email, role, office, school}) =>
                     <ul class="list-group list-group-flush" style="list-style: none;">
                         <li class="list-group-item">ID: ${name}</li>
                         <li class="list-group-item">Email ${email}</li>
-                        <li class="list-group-item">Office Number: ${office}</li>
+                        <li class="list-group-item">Office Number: ${officeNumber}</li>
                     </ul>
                   </div>
                 </div>
