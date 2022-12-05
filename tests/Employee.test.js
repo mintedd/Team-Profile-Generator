@@ -1,13 +1,8 @@
 const Employee = require('../lib/Employee')
 
+//can either use "describe --> it and expect OR test --> expect and "
+    test("should create name, id, email", () => () {
+        const obj = new Engineer();
 
-describe("Engineer", () => {
-    describe("something", () => () {
-        it("", () => {
-            const obj = new Engineer();
-
-            expect("",).toEqual()
-        })
+        expect(Employee).toBeDefined()
     })
-
-})
