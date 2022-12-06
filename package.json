@@ -8,7 +8,7 @@
     "test": "jest"
   },
   "scripts": {
-    "test": "jest --verbose test/*",
+    "test": "test",
     "start": "node index.js",
     "reset": "node reset.js"
   },
@@ -25,5 +25,8 @@
   "homepage": "https://github.com/mintedd/Team-Profile-Generator#readme",
   "dependencies": {
     "inquirer": "8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }

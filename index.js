@@ -9,9 +9,9 @@ const Manager = require("./lib/Manager");
 const template = require("./src/template");
 
 // const { dir } = require("console"); //automatically created itself
-// const generateHTML = require("./dist/index.html");
 
-const dirpath = path.resolve(__dirname, "dist");
+
+const dirpath = path.resolve(__dirname, "dist"); //did this part with my tutor still trying to fully understand 
 const distpath = path.join(dirpath, "index.html");
 
 let team = [];
@@ -68,6 +68,10 @@ function init() {
                         break;
                     default:
                         buildTeam()
+                    //  if i wanted to make this without the path would the writefile go here? 
+                    //  fs.writeFile('index.html', template(ans), (err) => 
+                    // err ? console.log(err) : console.log('Successfully created index.html!')
+                    // )
                 }
             })
     };
@@ -91,8 +95,8 @@ function init() {
             },
             {
                 type: 'input',
-                name: 'engineerOffice',
-                message: 'Enter your office number?',
+                name: 'engineerGithub',
+                message: 'Enter your Github.',
             },
         ])
             .then((ans) => {
@@ -120,8 +124,8 @@ function init() {
             },
             {
                 type: 'input',
-                name: 'internOffice',
-                message: 'Enter your office number?',
+                name: 'internSchool',
+                message: 'Enter your school.',
             },
         ])
             .then((ans) => {
@@ -132,7 +136,7 @@ function init() {
     };
 
     function buildTeam() {
-        if (!fs.existsSync(dirpath)) {
+        if (!fs.existsSync(dirpath)) { ////did this part with my tutor still trying to fully understand 
             fs.mkdirSync(dirpath)
         }
         fs.writeFileSync(distpath, template(team), "utf-8")

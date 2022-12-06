@@ -38,19 +38,19 @@ const generateTeam = teamLoad => {
         <div class="card-header">
             <h3>
                 <ul style="list-style: none;">
-                    <li id="name">${engineer.name}</li>
+                    <li id="name">${engineer.getName()}</li>
                     <li>
                         <i class="fa-solid fa-mug-hot fa-lg" style="align-items:left ;"></i>
-                        ${engineer.role}
+                        ${engineer.getRole()}
                     </li>
                 </ul>
             </h3>
         </div>
       <div class="card-body">
         <ul class="list-group list-group-flush" style="list-style: none;">
-            <li class="list-group-item">ID: ${engineer.id}</li>
-            <li class="list-group-item">Email: ${engineer.email} </li>
-            <li class="list-group-item">Office Number: ${engineer.github}</li>
+            <li class="list-group-item">ID: ${engineer.getID()}</li>
+            <li class="list-group-item">Email: ${engineer.getEmail()} </li>
+            <li class="list-group-item">Office Number: ${engineer.getGithub()}</li>
         </ul>
       </div>
     </div>
@@ -68,16 +68,16 @@ const generateTeam = teamLoad => {
                     <li id="name">${intern.getName()}</li>
                     <li>
                         <i class="fa-solid fa-mug-hot fa-lg" style="align-items:left ;"></i>
-                        ${intern.role}
+                        ${intern.getRole()}
                     </li>
                 </ul>
             </h3>
         </div>
       <div class="card-body">
         <ul class="list-group list-group-flush" style="list-style: none;">
-            <li class="list-group-item">ID: ${intern.id}</li>
-            <li class="list-group-item">Email: ${intern.email} </li>
-            <li class="list-group-item">Office Number: ${intern.school}</li>
+            <li class="list-group-item">ID: ${intern.getId()}</li>
+            <li class="list-group-item">Email: ${intern.getEmail()} </li>
+            <li class="list-group-item">Office Number: ${intern.getSchool()}</li>
         </ul>
       </div>
     </div>
