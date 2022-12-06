@@ -1,22 +1,22 @@
 const Intern = require('../lib/Intern')
 
-const engineer = new Engineer("mary", 2, "jon@gmail.com", "northwestern"); //this creates a hypotethical situation
+const intern = new Intern("mary", 2, "mary@gmail.com", "northwestern"); //this creates a hypotethical situation
 
 //can either use "describe --> it and expect OR test --> expect and "
-test("engineer should create name, id, email, and school", () => {
-    // const engineer = new engineer("mary", 2, "jon@gmail.com"); //this creates a hypotethical situation
+test("intern should create name, id, email, and school", () => {
+    // const intern = new intern("mary", 2, "mary@gmail.com"); //this creates a hypotethical situation
     //or 
-    // expect(engineer).toEqual({ name: "jon", id: 2, email: "jon@gmail.com" school: "northwestern"})
-    expect(engineer.name).toEqual("mary");
-    expect(engineer.id).toEqual(2);
-    expect(engineer.email).toEqual("jon@gmail.com");
-    expect(engineer.school).toEqual("northwestern")
+    // expect(intern).toEqual({ name: "mary", id: 2, email: "mary@gmail.com" school: "northwestern"})
+    expect(intern.name).toEqual("mary");
+    expect(intern.id).toEqual(2);
+    expect(intern.email).toEqual("mary@gmail.com");
+    expect(intern.school).toEqual("northwestern")
 });
 
-test("engineer getRole() should return their position", () => {
-    expect(engineer.getName()).toEqual("mary")
-    expect(engineer.getId()).toEqual(2)
-    expect(engineer.getEmail()).toEqual("jon@gmail.com")
-    expect(engineer.getSchool()).toEqual("northwestern")
-    expect(engineer.getRole()).toEqual("Intern")
+test("intern getName() should return str. getID() should return #, getEmail should return str, get getRole() should return str", () => {
+    expect(intern.getName()).toEqual("mary")
+    expect(intern.getId()).toEqual(2)
+    expect(intern.getEmail()).toEqual("mary@gmail.com")
+    expect(intern.getSchool()).toEqual("northwestern")
+    expect(intern.getRole()).toEqual("Intern")
 });

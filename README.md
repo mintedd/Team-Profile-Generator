@@ -30,3 +30,12 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
+
+## Getting Started
+Need to install jest and requirer
+For inquirer please install v npm i inquirer@8.2.4
+
+
+
+[recording](https://)
+![screenshot]

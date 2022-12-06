@@ -16,7 +16,7 @@ test("engineer should create name, id, email, and github", () => {
 
 test("engineer getRole() should return their position", () => {
     expect(engineer.getName()).toEqual("jon")
-    expect(engineer.getId()).toEqual(5)
+    expect(engineer.getId()).toBe(5)
     expect(engineer.getEmail()).toEqual("jon@gmail.com")
     expect(engineer.getGithub()).toEqual("jonny")
     expect(engineer.getRole()).toEqual("Engineer")
