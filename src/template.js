@@ -21,7 +21,7 @@ const generateTeam = teamLoad => {
       <div class="card-body">
         <ul class="list-group list-group-flush" style="list-style: none;">
             <li class="list-group-item">ID: ${manager.getID()}</li>
-            <li class="list-group-item">Email: ${manager.getEmail()} </li>
+            <li class="list-group-item">Email:<a href="mailto:${manager.getEmail()}"></a> ${manager.getEmail()} </li>
             <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
         </ul>
       </div>
@@ -40,7 +40,7 @@ const generateTeam = teamLoad => {
                 <ul style="list-style: none;">
                     <li id="name">${engineer.getName()}</li>
                     <li>
-                        <i class="fa-solid fa-mug-hot fa-lg" style="align-items:left ;"></i>
+                    <i class="fa-solid fa-glasses"></i>
                         ${engineer.getRole()}
                     </li>
                 </ul>
@@ -49,8 +49,8 @@ const generateTeam = teamLoad => {
       <div class="card-body">
         <ul class="list-group list-group-flush" style="list-style: none;">
             <li class="list-group-item">ID: ${engineer.getID()}</li>
-            <li class="list-group-item">Email: ${engineer.getEmail()} </li>
-            <li class="list-group-item">Office Number: ${engineer.getGithub()}</li>
+            <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}"></a>${engineer.getEmail()} </li>
+            <li class="list-group-item">Github:<a href="https://github.com/${engineer.getGithub()}" target="_blank"> ${engineer.getGithub()}</li>
         </ul>
       </div>
     </div>
@@ -67,8 +67,7 @@ const generateTeam = teamLoad => {
                 <ul style="list-style: none;">
                     <li id="name">${intern.getName()}</li>
                     <li>
-                        <i class="fa-solid fa-mug-hot fa-lg" style="align-items:left ;"></i>
-                        ${intern.getRole()}
+                    <i class="fa-solid fa-graduation-cap"></i>                        ${intern.getRole()}
                     </li>
                 </ul>
             </h3>
@@ -76,8 +75,8 @@ const generateTeam = teamLoad => {
       <div class="card-body">
         <ul class="list-group list-group-flush" style="list-style: none;">
             <li class="list-group-item">ID: ${intern.getId()}</li>
-            <li class="list-group-item">Email: ${intern.getEmail()} </li>
-            <li class="list-group-item">Office Number: ${intern.getSchool()}</li>
+            <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}"></a>${intern.getEmail()} </li>
+            <li class="list-group-item">School: ${intern.getSchool()}</li>
         </ul>
       </div>
     </div>
