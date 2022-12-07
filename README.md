@@ -32,10 +32,13 @@ THEN I exit the application, and the HTML is generated
 ```
 
 ## Getting Started
-Need to install jest and requirer
-For inquirer please install v npm i inquirer@8.2.4
+    Need to install jest and requirer
+    For inquirer please install v npm i inquirer@8.2.4
 
 
 
-[recording](https://)
-![screenshot]
+[recording](https://drive.google.com/file/d/1QoPC9KIGgLuORHNvizr2uM_TwrIXQazx/view)
+
+![screenshot](jestTest.png)
+![screenshot](nodePrompting.png)
+![screenshot](html.png)
